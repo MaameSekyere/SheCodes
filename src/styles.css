@@ -1,56 +1,73 @@
 h1 {
-  text-align: center;
-  color: purple;
-  font-size: 90px;
+    text-align: center;
+    color: purple;
+    font-size: 70px;
 }
+
 .temperature {
-  font-size: 50px;
-  color: seagreen;
+    font-size: 50px;
+    color: seagreen;
 }
+
 .free {
-  text-align: center;
+    text-align: center;
 }
+
 .col {
-  line-height: 1in;
+    line-height: 1in;
 }
+
 .col-8 {
-  margin-left: 10px;
+    margin-left: 10px;
 }
+
 .col-3 {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 .week {
-  font-size: 40px;
-  color: red;
-  font-style: italic;
-  padding: 0 100px;
-  text-align: center;
+    font-size: 30px;
+    color: red;
+    font-style: italic;
+    padding: 0 100px;
+    text-align: center;
 }
+
 .degree {
-  text-align: center;
-  font-weight: light;
-  font-size: 50px;
-  color: seagreen;
+    text-align: center;
+    font-weight: light;
+    font-size: 30px;
+    color: seagreen;
 }
+
 h1:hover {
-  color: black;
-  cursor: pointer;
-  transition: all ease-in-out;
+    color: black;
+    cursor: pointer;
+    transition: all ease-in-out;
 }
+
 .whole {
-  border: 1px solid #dadde1;
-  width: 35%;
-  margin: auto;
-  background-color: lightgoldenrodyellow;
+    border: 1px solid #dadde1;
+    width: 50%;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
 }
+
 .units {
-  position: relative;
-  top: -32px;
+    position: relative;
+    top: -32px;
 }
+
 .weather {
-  text-align: center;
+    text-align: center;
 }
+
 .primary {
-  color: red;
-  text-align: center;
+    color: red;
+    text-align: center;
+}
+
+#weather-icon {
+    display: block;
+    margin: 0 auto;
 }
