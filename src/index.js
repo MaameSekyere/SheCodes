@@ -19,6 +19,7 @@ function showTemp(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  celsiusTemp = response.data.main.temp;
 }
 
 function citySearch(city) {
@@ -36,13 +37,23 @@ function buttonSearch(event) {
 function showFahrenheitTemp(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
-  let fahrenheitTemp = (tempElement.innerHTML * 9) / 5 + 32;
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   tempElement.innerHTML = Math.round(fahrenheitTemp);
+}
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = Math.round(celsiusTemp);
 }
 
 let searchButton = document.querySelector("#search-button");
 searchButton.addEventListener("submit", buttonSearch);
 citySearch("Paris");
 
-let tempLink = document.querySelector("#temp-link");
-tempLink.addEventListener("click", showFahrenheitTemp);
+let fLink = document.querySelector("#f-link");
+fLink.addEventListener("click", showFahrenheitTemp);
+
+let cLink = document.querySelector("#c-link");
+cLink.addEventListener("click", showCelsiusTemp);
+
+let celsiusTemp = 0;
